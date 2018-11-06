@@ -1,7 +1,5 @@
 # packr
 
-[![GoDoc](https://godoc.org/github.com/gobuffalo/packr?status.svg)](https://godoc.org/github.com/gobuffalo/packr)
-
 Packr is a simple solution for bundling static assets inside of Go binaries. Most importantly it does it in a way that is friendly to developers while they are developing.
 
 ## Intro Video
@@ -13,13 +11,13 @@ To get an idea of the what and why of packr, please enjoy this short video: [htt
 To install Packr utility
 
 ```text
-$ go get -u github.com/gobuffalo/packr/packr
+$ go get -u github.com/jniltinho/packr/packr
 ```
 
 To get the dependency
 
 ```text
-$ go get -u github.com/gobuffalo/packr
+$ go get -u github.com/jniltinho/packr
 ```
 
 ## Usage
@@ -36,7 +34,7 @@ box := packr.NewBox("./templates")
 html, err := box.FindString("index.html")
 
 // Get the []byte representation of a file, or an error if it doesn't exist:
-html, err := box.FindBytes("index.html")
+html, err := box.Find("index.html")
 ```
 
 ### What is a Box?
