@@ -61,7 +61,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gobuffalo/packr"
+	"github.com/jniltinho/packr"
 )
 
 func main() {
@@ -99,7 +99,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/gobuffalo/packr"
+	"github.com/jniltinho/packr"
 )
 
 func main() {
@@ -183,8 +183,7 @@ Now you can make multiple releases and all of your needed static files will be a
 Example Script for building to 3 common targets:
 
 ```bash
-GOOS=darwin GOARCH=amd64 packr build && mv ./project_name ./releases/darwin-project_name \
-  && GOOS=linux GOARCH=amd64 packr build && mv ./project_name ./releases/linux-project_name \
+  GOOS=linux GOARCH=amd64 packr build && mv ./project_name ./releases/linux-project_name \
   && GOOS=windows GOARCH=386 packr build && mv ./project_name.exe ./releases/project_name.exe \
   && packr clean
 ```
